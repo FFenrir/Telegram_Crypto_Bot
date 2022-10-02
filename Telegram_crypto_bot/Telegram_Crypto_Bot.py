@@ -27,7 +27,7 @@ async def welcome(message: types.Message):
     "\n/XPR for Ripple(XPR) rate"
     "\n/BUSD for Binance USD rate"
     "\n/ADA for Cordano(ADA) rate"
-    "\n/SOL for Solano(SOL) rate"
+    "\n/SOL for Solana(SOL) rate"
     "\n/DOGE for Dogecoin rate")
     
 
@@ -85,10 +85,10 @@ async def ethereum_rate(message: types.Message):
     await message.reply('Cardano(ADA)\n' + str(data['cardano']['usd']) + ' ' +'USD 💵')
 
 
-#Solano(SOL)
-@dp.message_handler(commands=['SOL','Solano','solano'])
+#Solana(SOL)
+@dp.message_handler(commands=['SOL','Solana','solana'])
 async def ethereum_rate(message: types.Message):
-    data = cg.get_price(ids='solano',vs_currencies='usd')
+    data = cg.get_price(ids='solana',vs_currencies='usd')
     await message.reply('Solano(SOL)\n' + str(data['solano']['usd']) + ' ' +'USD 💵')
 
 
