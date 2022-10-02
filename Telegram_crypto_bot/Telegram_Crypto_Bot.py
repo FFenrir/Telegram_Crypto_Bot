@@ -16,7 +16,19 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start', 'help'])
 async def welcome(message: types.Message):
-    await message.reply("Hello!I am CryptoBot!\nFor now I do not have my full fuctionality\nbut my creator is working on it!\nHave a nice day!")
+    await message.reply("Hello!I am Crypto Bot!"
+    "\nHere you can get rates for certain cryptocurrencies."
+    "\nHere is list of commands you can use:"
+    "\n/BTC for Bitcoin rate"
+    "\n/ETH for Ethereum rate"
+    "\n/USDT for Tether rate"
+    "\n/USDC for USD-Coin rate"
+    "\n/BNB for Binancecoin rate"
+    "\n/XPR for Ripple(XPR) rate"
+    "\n/BUSD for Binance USD rate"
+    "\n/ADA for Cordano(ADA) rate"
+    "\n/SOL for Solano(SOL) rate"
+    "\n/DOGE for Dogecoin rate")
     
 
 #BITCOIN
